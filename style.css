@@ -1,0 +1,152 @@
+/* Importação das fontes do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Regras gerais para o corpo da página */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f6f6f6; /* Fundo cinza muito claro */
+    color: #1a202c; /* Cor do texto principal */
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Estilo do cabeçalho e rodapé */
+.main-header,
+.main-footer {
+    background-color: #2b6cb0; /* Azul médio */
+    color: #ffffff;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+.main-header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.header-subtitle {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 400;
+}
+
+.main-footer {
+    font-size: 0.9rem;
+    margin-top: auto; /* Garante que o rodapé fique na parte inferior */
+}
+
+.link-secundario {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Estilo do conteúdo principal */
+.main-content {
+    width: 90%;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: #ffffff; /* Fundo branco para a área de conteúdo */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Estilo dos títulos de seção */
+h2 {
+    color: #1a202c;
+    border-bottom: 2px solid #e9f0fb;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Cores de texto */
+.texto-principal {
+    color: #1a202c; /* Cinza escuro */
+}
+
+.texto-secundario {
+    color: #4a5568; /* Cinza médio */
+    font-size: 0.95rem;
+}
+
+/* Estilo do formulário */
+.section-form {
+    margin-bottom: 3rem;
+}
+
+.nota-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: flex-end;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 200px; /* Faz os inputs se ajustarem na tela */
+}
+
+.form-group label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #4a5568;
+}
+
+.form-group input {
+    padding: 0.8rem;
+    border: 1px solid #e9f0fb;
+    border-radius: 4px;
+    background-color: #f0f4fa;
+    color: #1a202c;
+}
+
+.button-salvar {
+    padding: 0.8rem 1.5rem;
+    background-color: #2b6cb0;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.button-salvar:hover {
+    background-color: #1a365d;
+}
+
+/* Estilo da lista de alunos (cards) */
+.students-container {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.aluno-card {
+    background-color: #e9f0fb; /* Cor de bordas, caixas e cards */
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.aluno-card h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+/* Estilo para as cores de situação do aluno */
+.status-aprovado {
+    color: #2f855a; /* Verde */
+    font-weight: bold;
+}
+
+.status-reprovado {
+    color: #c53030; /* Vermelho */
+    font-weight: bold;
+}
